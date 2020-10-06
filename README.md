@@ -1,8 +1,8 @@
 # BASIC LOGIN SYSTEM
 
-## built using: 
+built using:
 
-express
-handlebars
-passport
-bcrypt
+* express
+* handlebars
+* passport
+* bcrypt
