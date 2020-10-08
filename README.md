@@ -7,3 +7,5 @@ This is a simple login system built using:
 * handlebars
 * passport
 * bcrypt
+
+This project is intended to be ported into other projects and modified as necessary.
