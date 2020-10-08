@@ -1,8 +1,9 @@
 # BASIC LOGIN SYSTEM
 
-built using:
+This is a simple login system built using:
 
 * express
+* express-session
 * handlebars
 * passport
 * bcrypt
