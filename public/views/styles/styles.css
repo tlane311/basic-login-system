@@ -1,0 +1,178 @@
+:root{
+    --color-1: #8d8741;
+    --dark-color:#2b1414;
+    --color-2: #659DBD;
+    --bright-color: #FFF3D0;
+    --color-3: #DAAD86;
+    --color-4: #BC986A;
+    --color-5: #FBEEC1;
+} 
+
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior:smooth;
+}
+
+
+a{
+    text-decoration: none;
+    color:inherit;
+    transition: all .5s;
+    font-size: 1rem;
+}
+a:hover{
+    
+    color:var(--color-5);
+}
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: min(2.5vw, 64px);
+    color:var(--dark-color);
+    background-color:var(--color-3);
+    letter-spacing: 8px;
+}
+
+
+/* Login-register */
+
+#login-register{
+    /* outer positioning */
+    position:absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    /*inner positioning */
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+    /*shape, size, and color*/
+    border-radius:min(5rem,96px); 
+    height: 20rem;
+    width: 16rem;
+    max-height: 400px;
+    max-width:320px;
+    background-color:var(--color-2);
+    box-shadow: .3rem .15rem rgba(0,0,0,.1);
+
+    /* padding, border and margin */
+    padding:2rem;
+}
+
+form{
+    height:90%;
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:min(1rem,32px);
+}
+
+label{
+    display:none;
+}
+
+input{
+    height:min(10%,32px);
+    width:75%;
+    
+    font-size: min(1rem,32px);
+    letter-spacing: 2px;
+
+    margin-top:5%;
+    margin-bottom:5%;
+    
+    border-radius: min(.2rem,16px);
+    border-color: transparent;
+    border:none;
+
+    padding:min(8px,1%);
+}
+
+form button{
+    
+    /* font */
+    font-size: min(1rem,32px);
+    text-transform: lowercase;
+    letter-spacing: 4px;
+
+    /* shape*/
+    height:15%;
+    max-height:64px;
+    width:70%;
+    max-width: 256px;
+    border-radius: 1rem;
+
+
+    /*border, margin & padding */
+    border-color:transparent;
+    margin-top:5%;
+
+    cursor: pointer;
+
+}
+
+form button:hover{
+    background-color: var(--color-1);
+    color:var(--color-5);
+}
+
+
+#login-register h1{
+    font-size: min(2rem,64px);
+    margin-bottom:1%;
+    cursor:default;
+}
+
+
+.tooltip{
+    position:absolute;
+    bottom:-1.1rem;
+
+    height:5%;
+    width:80%;
+
+    text-align:center;
+    font-size:min(.5rem,16px);
+    letter-spacing:2px;
+
+    background-color:var(--color-5);
+    border-radius: min(1rem, 16px);
+}
+
+
+/* Homepage */
+
+#home{
+    height:75%;
+    width:75%;
+    border-radius:min(1rem, 32px);
+
+    transform:translate(-50%,-50%);
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    background-color:var(--color-5);
+}
+
+#home form{
+    height:33%;
+}
+
+#home button{
+    font-size: min(1rem,24px);;
+    width:20%;
+    height:48px;
+    padding:8px;
+}
